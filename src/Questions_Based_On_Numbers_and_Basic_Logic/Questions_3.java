@@ -1,3 +1,5 @@
+package Questions_Based_On_Numbers_and_Basic_Logic;
+
 public class Questions_3 {
     public static void main(String[] args) {
         // prime --> 1 , 3 , 5 , 7 the numbers who divide by self or 1

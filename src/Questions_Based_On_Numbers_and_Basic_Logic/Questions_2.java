@@ -1,3 +1,5 @@
+package Questions_Based_On_Numbers_and_Basic_Logic;
+
 public class Questions_2 {
     public static void main(String[] args) {
         // sum of digit

@@ -1,3 +1,5 @@
+package Questions_Based_On_Numbers_and_Basic_Logic;
+
 public class Question_1 {
 
     // through method
