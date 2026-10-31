@@ -15,7 +15,7 @@ public class Find_Missing_number {
 
             int missing = sum - actualSum;
 
-            System.out.println("Missing number" + missing);
+            System.out.println("missing number" + missing);
         }
     }
 
