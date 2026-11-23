@@ -1,0 +1,67 @@
+
+public class Main {
+
+    public static int firstOccurrence(int[] arr, int target) {
+
+        int low = 0;
+        int high = arr.length - 1;
+        int ans = -1;
+
+        while (low <= high) {
+
+            int mid = low + (high - low) / 2;
+
+            if (arr[mid] == target) {
+                ans = mid;
+                high = mid - 1; // Search left
+            }
+            else if (arr[mid] < target) {
+                low = mid + 1;
+            }
+            else {
+                high = mid - 1;
+            }
+        }
+
+        return ans;
+    }
+
+    public static int lastOccurrence(int[] arr, int target) {
+
+        int low = 0;
+        int high = arr.length - 1;
+        int ans = -1;
+
+        while (low <= high) {
+
+            int mid = low + (high - low) / 2;
+
+            if (arr[mid] == target) {
+                ans = mid;
+                low = mid + 1; // Search right
+            }
+            else if (arr[mid] < target) {
+                low = mid + 1;
+            }
+            else {
+                high = mid - 1;
+            }
+        }
+
+        return ans;
+    }
+
+    public static void main(String[] args) {
+
+        int[] arr = {5, 7, 7, 8, 8, 10};
+        int target = 8;
+
+        int first = firstOccurrence(arr, target);
+        int last = lastOccurrence(arr, target);
+
+        System.out.println("First: " + first);
+        System.out.println("Last: " + last);
+
+        System.out.println("Answer: [" + first + ", " + last + "]");
+    }
+}
